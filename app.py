@@ -42,6 +42,9 @@ HTML = r"""
     <title>VoiceScore — контроль качества звонков</title>
     <meta name="description" content="VoiceScore — AI-платформа для контроля качества звонков, аналитика, AI-поиска и управленческой отчётности.">
     <meta name="theme-color" content="#081224">
+
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
