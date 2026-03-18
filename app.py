@@ -1858,7 +1858,7 @@ HTML = r"""
 
             <div class="dashboard-shell glass gradient-border reveal tilt-card">
                 <div class="dashboard-top">
-                    <div class="dashboard-title">AI Quality Dashboard</div>
+                    <div class="dashboard-title">AI аналитика качества</div>
                     <div class="dashboard-badge">Live demo analytics</div>
                 </div>
 
