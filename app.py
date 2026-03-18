@@ -40,7 +40,7 @@ HTML = r"""
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoiceScore — контроль качества звонков</title>
-    <meta name="description" content="VoiceScore — AI-платформа для контроля качества звонков, dashboard, AI-поиска и управленческой отчётности.">
+    <meta name="description" content="VoiceScore — AI-платформа для контроля качества звонков, аналитика, AI-поиска и управленческой отчётности.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -944,7 +944,7 @@ HTML = r"""
             border-radius: 14px;
             background: rgba(255,255,255,0.04);
             border: 1px solid rgba(255,255,255,0.06);
-            position: relative;
+            position: relative;А
             z-index: 2;
             font-size: 14px;
             font-weight: 600;
@@ -1716,7 +1716,7 @@ HTML = r"""
 
             <div class="nav-links">
                 <a href="#features">Функции</a>
-                <a href="#dashboard">Dashboard</a>
+                <a href="#dashboard">Аналитика</a>
                 <a href="#search-ai">AI поиск</a>
                 <a href="#system-ui">Интерфейс</a>
                 <a href="#reporting">Отчётность</a>
@@ -1730,7 +1730,7 @@ HTML = r"""
             <div class="hero-box glass gradient-border reveal">
                 <div class="hero-grid">
                     <div>
-                        <div class="badge">Binotel API • AI dashboard • каз / рус • отчётность для руководителя</div>
+                        <div class="badge">Binotel API • AI аналитика • каз / рус • отчётность для руководителя</div>
                         <h1 class="glow-text">AI-платформа для контроля качества звонков и управленческой отчётности</h1>
                         <p>
                             VoiceScore показывает не просто анализ звонков, а готовую управленческую аналитику:
@@ -1825,7 +1825,7 @@ HTML = r"""
         <div class="container">
             <div class="section-title center reveal">
                 <h2>Функции платформы</h2>
-                <p>Glassmorphism интерфейс, AI dashboard, живой поиск звонков и управленческая аналитика.</p>
+                <p>Glassmorphism интерфейс, AI аналитика, живой поиск звонков и управленческая аналитика.</p>
             </div>
 
             <div class="grid-4 stagger-parent">
@@ -1852,7 +1852,7 @@ HTML = r"""
     <section class="section" id="dashboard">
         <div class="container">
             <div class="section-title center reveal">
-                <h2>AI Dashboard с графиками</h2>
+                <h2>AI Аналитика с графиками</h2>
                 <p>Живые метрики, тренды качества, рейтинг операторов и проблемные точки команды.</p>
             </div>
 
@@ -2250,7 +2250,7 @@ HTML = r"""
                 </p>
                 <div class="hero-actions" style="justify-content:center;">
                     <a href="#contact" class="btn btn-primary magnetic-btn">Оставить заявку</a>
-                    <a href="#dashboard" class="btn btn-secondary magnetic-btn">Посмотреть dashboard</a>
+                    <a href="#dashboard" class="btn btn-secondary magnetic-btn">Посмотреть аналитику</a>
                 </div>
             </div>
         </div>
