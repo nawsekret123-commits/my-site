@@ -1711,7 +1711,7 @@ HTML = r"""
                         <path d="M12 2l2.6 5.8L21 10l-4.7 4.3 1.2 6.2L12 17.7 6.5 20.5l1.2-6.2L3 10l6.4-2.2L12 2z"></path>
                     </svg>
                 </span>
-                Aqyl<span>Flow</span>
+                Voice<span>Score</span>
             </div>
 
             <div class="nav-links">
