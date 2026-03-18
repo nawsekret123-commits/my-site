@@ -41,6 +41,7 @@ HTML = r"""
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoiceScore — контроль качества звонков</title>
     <meta name="description" content="VoiceScore — AI-платформа для контроля качества звонков, аналитика, AI-поиска и управленческой отчётности.">
+    <meta name="theme-color" content="#081224">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
