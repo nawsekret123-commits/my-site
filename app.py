@@ -17,7 +17,7 @@ def send_telegram(name, phone, service, comment):
         return
 
     text = f"""
-Новая заявка AqylFlow
+Новая заявка VoiceScore
 
 Имя: {name}
 Телефон: {phone}
@@ -39,8 +39,8 @@ HTML = r"""
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AqylFlow — AI контроль качества звонков</title>
-    <meta name="description" content="AqylFlow — AI-платформа для контроля качества звонков, dashboard, AI-поиска и управленческой отчётности.">
+    <title>VoiceScore — контроль качества звонков</title>
+    <meta name="description" content="VoiceScore — AI-платформа для контроля качества звонков, dashboard, AI-поиска и управленческой отчётности.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1733,7 +1733,7 @@ HTML = r"""
                         <div class="badge">Binotel API • AI dashboard • каз / рус • отчётность для руководителя</div>
                         <h1 class="glow-text">AI-платформа для контроля качества звонков и управленческой отчётности</h1>
                         <p>
-                            AqylFlow показывает не просто анализ звонков, а готовую управленческую аналитику:
+                            VoiceScore показывает не просто анализ звонков, а готовую управленческую аналитику:
                             ошибки команды за период, рейтинг операторов, группы просрочки, длительность разговоров,
                             воронку диалога и средние оценки по сотруднику, группе и всей команде.
                         </p>
@@ -2039,7 +2039,7 @@ HTML = r"""
 
             <div class="system-ui glass gradient-border reveal tilt-card">
                 <div class="system-topbar">
-                    <div class="system-brand">AqylFlow Console</div>
+                    <div class="system-brand">VoiceScore Console</div>
                     <div class="system-actions">
                         <span class="system-dot"></span>
                         <span class="system-dot"></span>
@@ -2332,7 +2332,7 @@ HTML = r"""
     </section>
 
     <div class="footer">
-        © 2026 AqylFlow. Все права защищены.
+        © 2026 VoiceScore. Все права защищены.
     </div>
 
 
