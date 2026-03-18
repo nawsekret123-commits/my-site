@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: aqylflow-site
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: WHATSAPP_NUMBER
+        value: 87078340913
+      - key: TELEGRAM_USERNAME
+        value: nawsekret123
