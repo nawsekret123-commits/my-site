@@ -2192,7 +2192,7 @@ HTML = r"""
                 <div class="report-card glass gradient-border reveal tilt-card">
                     <h3>Группы просрочки и длительность</h3>
                     <div class="report-list">
-                        <div class="report-row"><span>Группы просрочки</span><strong>-4 → 120 дней</strong></div>
+                        <div class="report-row"><span>Группы просрочки</span><strong>-1 → 120 дней</strong></div>
                         <div class="report-row"><span>Средняя длительность</span><strong>По группе и человеку</strong></div>
                         <div class="report-row"><span>Самые длинные разговоры</span><strong>Точки перегруза</strong></div>
                         <div class="report-row"><span>Самые короткие разговоры</span><strong>Риск “слива” клиента</strong></div>
