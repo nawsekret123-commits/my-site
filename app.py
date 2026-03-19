@@ -1743,7 +1743,7 @@ HTML = r"""
   </h2>
 
   <div class="slider">
-    <img id="slide" src="/static/slide1.png" style="width:100%; border-radius:20px; box-shadow:0 0 40px rgba(0,255,255,0.2);">
+    <img id="slide" src="{{ url_for('static', filename='analytics1.png') }}">
 
     <div style="margin-top:20px;">
       <button onclick="prevSlide()">←</button>
@@ -2778,10 +2778,13 @@ HTML = r"""
     </script>
     <script>
 let slides = [
-  "/static/slide1.png",
-  "/static/slide2.png",
-  "/static/slide3.png",
-  "/static/slide4.png"
+  "{{ url_for('static', filename='analytics1.png') }}",
+  "{{ url_for('static', filename='analytics2.png') }}",
+  "{{ url_for('static', filename='analytics3.png') }}",
+  "{{ url_for('static', filename='kfdklssssss.png') }}",
+  "{{ url_for('static', filename='kgkklfgkflgklf.png') }}",
+  "{{ url_for('static', filename='lsldlflflff.png') }}",
+  "{{ url_for('static', filename='ssssllll.jpg') }}"
 ];
 
 let texts = [
