@@ -1743,14 +1743,65 @@ HTML = r"""
   </h2>
 
   <div class="slider">
-    <img id="slide" src="{{ url_for('static', filename='analytics1.png') }}">
+    <div style="padding:160px 20px 90px; text-align:center;">
+  <h2 style="margin-bottom:30px; font-size:42px; font-weight:800;">
+    Как выглядит VoiceScore
+  </h2>
 
-    <div style="margin-top:20px;">
-      <button onclick="prevSlide()">←</button>
-      <button onclick="nextSlide()">→</button>
+  <div class="slider" style="max-width:900px; margin:0 auto;">
+    <div style="
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:18px;
+      border-radius:28px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter:blur(14px);
+      box-shadow:0 20px 50px rgba(0,0,0,0.25);
+    ">
+      <img
+        id="slide"
+        src="{{ url_for('static', filename='analytics1.png') }}"
+        style="
+          width:100%;
+          max-width:820px;
+          height:460px;
+          object-fit:contain;
+          border-radius:18px;
+          box-shadow:0 0 30px rgba(0,255,255,0.12);
+          transition:opacity 0.25s ease;
+          opacity:1;
+          background:rgba(0,0,0,0.18);
+        "
+      >
     </div>
 
-    <p id="slideText" style="margin-top:15px; opacity:0.7;">
+    <div style="margin-top:22px;">
+      <button onclick="prevSlide()" style="
+        background:rgba(94,234,212,0.10);
+        border:1px solid rgba(94,234,212,0.25);
+        color:#99f6e4;
+        padding:10px 18px;
+        margin:0 6px;
+        border-radius:12px;
+        cursor:pointer;
+        font-size:18px;
+      ">←</button>
+
+      <button onclick="nextSlide()" style="
+        background:rgba(94,234,212,0.10);
+        border:1px solid rgba(94,234,212,0.25);
+        color:#99f6e4;
+        padding:10px 18px;
+        margin:0 6px;
+        border-radius:12px;
+        cursor:pointer;
+        font-size:18px;
+      ">→</button>
+    </div>
+
+    <p id="slideText" style="margin-top:16px; opacity:0.78; font-size:18px;">
       Показатели команды за день
     </p>
   </div>
@@ -2800,8 +2851,14 @@ let texts = [
 let current = 0;
 
 function showSlide() {
-  document.getElementById("slide").src = slides[current];
-  document.getElementById("slideText").innerText = texts[current];
+  const img = document.getElementById("slide");
+  img.style.opacity = 0;
+
+  setTimeout(() => {
+    img.src = slides[current];
+    document.getElementById("slideText").innerText = texts[current];
+    img.style.opacity = 1;
+  }, 180);
 }
 
 function nextSlide() {
