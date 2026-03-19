@@ -1737,21 +1737,23 @@ HTML = r"""
             </div>
         </div>
     </div>
-<h2 style="text-align:center; margin-top:60px;">
-Как выглядит VoiceScore
-</h2>
+<div style="padding:100px 20px; text-align:center;">
+  <h2 style="margin-bottom:30px;">
+    Как выглядит VoiceScore
+  </h2>
 
-<div class="slider">
-  <img id="slide" src="/static/slide1.png">
+  <div class="slider">
+    <img id="slide" src="/static/slide1.png" style="width:100%; border-radius:20px; box-shadow:0 0 40px rgba(0,255,255,0.2);">
 
-  <div class="slider-controls">
-    <button onclick="prevSlide()">←</button>
-    <button onclick="nextSlide()">→</button>
+    <div style="margin-top:20px;">
+      <button onclick="prevSlide()">←</button>
+      <button onclick="nextSlide()">→</button>
+    </div>
+
+    <p id="slideText" style="margin-top:15px; opacity:0.7;">
+      Показатели команды за день
+    </p>
   </div>
-
-  <p id="slideText">
-    Показатели команды за день
-  </p>
 </div>
 
 <section class="hero">
