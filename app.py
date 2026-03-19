@@ -1737,8 +1737,24 @@ HTML = r"""
             </div>
         </div>
     </div>
+<h2 style="text-align:center; margin-top:60px;">
+Как выглядит VoiceScore
+</h2>
 
-    <section class="hero">
+<div class="slider">
+  <img id="slide" src="/static/slide1.png">
+
+  <div class="slider-controls">
+    <button onclick="prevSlide()">←</button>
+    <button onclick="nextSlide()">→</button>
+  </div>
+
+  <p id="slideText">
+    Показатели команды за день
+  </p>
+</div>
+
+<section class="hero">
         <div class="container">
             <div class="hero-box glass gradient-border reveal">
                 <div class="hero-grid">
@@ -2758,6 +2774,38 @@ HTML = r"""
         animateLog("log2", logTexts[1], 1200);
         animateLog("log3", logTexts[2], 2100);
     </script>
+    <script>
+let slides = [
+  "/static/slide1.png",
+  "/static/slide2.png",
+  "/static/slide3.png",
+  "/static/slide4.png"
+];
+
+let texts = [
+  "Показатели команды за день",
+  "Аналитика операторов",
+  "Отчеты и метрики",
+  "Контроль качества звонков"
+];
+
+let current = 0;
+
+function showSlide() {
+  document.getElementById("slide").src = slides[current];
+  document.getElementById("slideText").innerText = texts[current];
+}
+
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  showSlide();
+}
+
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide();
+}
+</script>
 </body>
 </html>
 """
